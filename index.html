@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chordz Institute - Where Music Comes Alive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .saffron { color: #FF9933; }
+    .bg-saffron { background-color: #FF9933; }
+    .btn {
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+
+  <!-- Navigation -->
+  <nav class="bg-black text-white p-4 fixed w-full z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold saffron">Chordz Institute</div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-[#FF9933]">Home</a>
+        <a href="#about" class="hover:text-[#FF9933]">About</a>
+        <a href="#courses" class="hover:text-[#FF9933]">Courses</a>
+        <a href="#portfolio" class="hover:text-[#FF9933]">Portfolio</a>
+        <a href="#blog" class="hover:text-[#FF9933]">Blog</a>
+        <a href="#contact" class="hover:text-[#FF9933]">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center text-white text-center"
+           style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d');">
+    <div class="px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Where Music Comes Alive</h1>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Professional music education with a fun and creative approach</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#contact" class="btn bg-saffron text-white py-3 px-8 rounded-full font-bold">Book a Session</a>
+        <a href="#courses" class="btn bg-blue-600 text-white py-3 px-8 rounded-full font-bold">Explore Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 md:px-12 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">About Us</h2>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        At <span class="saffron font-bold">Chordz Institute</span>, we believe music is more than notes—
+        it’s expression, creativity, and joy. We offer professional training in piano, violin, guitar,
+        recorder, and drums, tailored for both beginners and advanced learners.
+      </p>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Courses</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="fa-solid fa-music text-4xl saffron mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Piano</h3>
+          <p>From classical pieces to pop, learn technique and expression.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="fa-solid fa-violin text-4xl saffron mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Violin</h3>
+          <p>Develop tone, bow control, and mastery of beautiful melodies.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="fa-solid fa-guitar text-4xl saffron mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Guitar</h3>
+          <p>Learn chords, strumming, solos, and your favorite styles.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="fa-solid fa-drum text-4xl saffron mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Drums</h3>
+          <p>Rhythm, grooves, and advanced drumming techniques.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="fa-solid fa-flute text-4xl saffron mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Recorder</h3>
+          <p>Perfect for beginners: simple melodies to complex tunes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Showcase</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1527333656061-ca7a5ad82c49" alt="Performance"
+             class="rounded-lg shadow-md">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Piano Lesson"
+             class="rounded-lg shadow-md">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Guitar Lesson"
+             class="rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">From Our Blog</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold mb-2">Why Learning Music Changes Lives</h3>
+          <p class="text-gray-600 mb-4">Discover how music training builds discipline, focus, and creativity...</p>
+          <a href="#" class="saffron font-bold">Read More →</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold mb-2">Top 5 Tips for Beginner Pianists</h3>
+          <p class="text-gray-600 mb-4">Practical tips to help you master piano basics quickly...</p>
+          <a href="#" class="saffron font-bold">Read More →</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="font-bold mb-2">The Joy of Playing in a Band</h3>
+          <p class="text-gray-600 mb-4">Learn why ensemble playing is a key part of musical growth...</p>
+          <a href="#" class="saffron font-bold">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Form -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+      <div class="text-center mb-8">
+        <p>Email: <a href="mailto:chordzinstitute@gmail.com" class="saffron font-bold">chordzinstitute@gmail.com</a></p>
+        <p>Phone: <a href="tel:+2348067527114" class="saffron font-bold">+234 806 752 7114</a></p>
+        <p>
+          <a href="https://twitter.com/chordz_ins" target="_blank" class="mx-2"><i class="fab fa-twitter text-2xl"></i></a>
+          <a href="https://instagram.com/chordz_ins" target="_blank" class="mx-2"><i class="fab fa-instagram text-2xl"></i></a>
+        </p>
+      </div>
+
+      <!-- Book a Session Form -->
+      <form action="https://formspree.io/f/mgvnobvn" method="POST" class="bg-gray-100 p-8 rounded-lg shadow-md">
+        <div class="mb-4">
+          <label class="block mb-2 font-bold">Name</label>
+          <input type="text" name="name" required class="w-full p-3 rounded border border-gray-300">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-bold">Email</label>
+          <input type="email" name="_replyto" required class="w-full p-3 rounded border border-gray-300">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-bold">Message</label>
+          <textarea name="message" rows="4" required class="w-full p-3 rounded border border-gray-300"></textarea>
+        </div>
+        <button type="submit" class="btn bg-saffron text-white px-6 py-3 rounded-full font-bold">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-6 text-center">
+    <p>&copy; 2025 Chordz Institute. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
